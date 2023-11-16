@@ -66,7 +66,6 @@ for (i in 3:ncol(mergedDF)) {
 
 #rename columns-------------------------------------------------------
 colnames(mean_SD_DF) <- c("Subject", "Activity", "Mean_Body_Acceleration_X_Axis", "SD_Body_Acceleration_X_Axis", "Mean_Body_Acceleration_Y_Axis", "SD_Body_Acceleration_Y_Axis", "Mean_Body_Acceleration_Z_Axis", "SD_Body_Acceleration_Z_Axis", "Mean_Angular_Velocity_X_Axis", "SD_Angular_Velocity_X_Axis", "Mean_Angular_Velocity_Y_Axis", "SD_Angular_Velocity_Y_Axis", "Mean_Angular_Velocity_Z_Axis", "SD_Angular_Velocity_Z_Axis", "Mean_Total_Acceleration_X_Axis", "SD_Total_Acceleration_X_Axis", "Mean_Total_Acceleration_Y_Axis", "SD_Total_Acceleration_Y_Axis", "Mean_Total_Acceleration_Z_Axis", "SD_Total_Acceleration_Z_Axis")
-write.table(mean_SD_DF, "tidy_Data.txt", sep="\t", row.names = TRUE) #save to textfile
 
 #create a second dataset with the average of each variable for each activity and subject
 #subject
